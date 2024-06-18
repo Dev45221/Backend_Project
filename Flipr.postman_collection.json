@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "23daaedd-cf9a-4789-96a1-c54d09f69c25",
+		"name": "Flipr",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29954611"
+	},
+	"item": [
+		{
+			"name": "SignUp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dev\",\r\n    \"email\": \"dev@gmail.com\",\r\n    \"password\": 963\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2002/v1/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"v1",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"dev@gmail.com\",\r\n    \"password\": 963\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2002/v1/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"v1",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ME",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2002/v1/auth/me?id=66714eb63c8396048d9ee766",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"v1",
+						"auth",
+						"me"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "66714eb63c8396048d9ee766"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Communnity",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"New Community\",\r\n    \"slug\": \"new-community\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2002/v1/community?id=66714eb63c8396048d9ee766",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"v1",
+						"community"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "66714eb63c8396048d9ee766"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Communities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2002/v1/community",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"v1",
+						"community"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Role",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Community Admin1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2002/v1/role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2002",
+					"path": [
+						"v1",
+						"role"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
